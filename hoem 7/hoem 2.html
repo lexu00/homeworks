@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .parent {
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: cadetblue;
+        flex-direction: column;
+      }
+
+      h3 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: center;
+        margin-left: 50%;
+        margin-right: 50%;
+        font-size-adjust: inherit;
+        font-size: 2.5vw;
+        z-index: 2;
+      }
+      .kid1 {
+        display: inline-block;
+        position: relative;
+       
+        min-width: 120vw;
+        width: 120vw;
+        min-height: 10vh;
+        height: 20vh;
+        background-color: coral;
+        transform: rotate(330deg);
+        min-height: 30px;
+      }
+      .kid2 {
+        display: inline-block;
+        position: relative;
+        min-width: 120vw;
+        width: 120vw;
+        height: 20vh;
+        min-height: 10vh;
+        background-color: rgb(133, 86, 69);
+        transform: rotate(330deg);
+        min-height: 30px;
+        
+      }
+      .kid3 {
+        display: inline-block;
+        position: relative;
+        min-width: 120vw;
+        width: 120vw;
+        height: 20vh;
+        min-height: 10vh;
+        background-color: rgb(133, 86, 69);
+        transform: rotate(330deg);
+        min-height: 30px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="kid1"><h3>flex</h3></div>
+      <div class="kid2"><h3>in</h3></div>
+      <div class="kid3"><h3>cancer</h3></div>
+      <!-- <div class="kid1 text">flex</div>
+      <div class="kid2 text">in</div>
+      <div class="kid3 text">cancer</div> -->
+    </div>
+  </body>
+</html>

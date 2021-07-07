@@ -1,0 +1,31 @@
+#cucu {
+  background-color: aqua;
+  font-size: 50px;
+}
+#mumu {
+  background-color: bisque;
+  font-size: 50px;
+}
+#nucu {
+  background-color: blue;
+  font-size: 50px;
+}
+#mucu {
+  background-color: blueviolet;
+  font-size: 50px;
+}
+#titl {
+  font-size: 100px;
+  color: brown;
+}
+
+#p1 {
+  font-size: 25px;
+  font-style: oblique;
+  text-align: center;
+}
+.p2 {
+  font-size: 30px;
+  text-indent: 10px;
+  color: chocolate;
+}

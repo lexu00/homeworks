@@ -1,0 +1,10 @@
+Tema putin mai complicata de data asta.
+Prin numele arhivei sa va treceti numele vostru
+CSS-ul puteti sa-l faceti in ce tip vreti voi (extern intern)
+Vreau ca divul din stanga si cel de sus sa fie postion:fixed;
+Nu vreau margini albe nici unde.
+For sizing references:
+divul de sus la mine are height: 5%; width (tre sa ocupe tot view-portul);
+divul de la stanga are width:15%; height (tre sa o ocupe tot view-portul);
+divul din mijloc (cel principal) are height:2000px (ca sa pot sa il scrolez ca in video) width din nou ca sa ocupe exact spatiul orizontal fara sa imi apara bara de scroll orizontala
+The rest is up to you!

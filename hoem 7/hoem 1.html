@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .parinte {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+        width: 70vw;
+        height: 100vh;
+        margin-left: 15vw;
+        box-sizing: border-box;
+        border-width: 5px;
+        border-top: 0px;
+        border-style: solid;
+        border-color: gray;
+      }
+      .kid1 {
+        display: flex;
+        height: 70vh;
+        width: 100vw;
+        background-color: rgb(197, 194, 15);
+        align-self: center;
+      }
+      .son-of-kid1 {
+        display: flex;
+        align-self: center;
+        height: 80%;
+        width: 90%;
+        background-color: hotpink;
+        margin-left: 5%;
+      }
+      .kid2 {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        flex-flow: row;
+        bottom: 0px;
+        width: 100%;
+        height: 15vh;
+
+        background-color: yellowgreen;
+      }
+      .son-of-kid2-1 {
+        background-color: brown;
+        width: 30%;
+        height: 100%;
+        margin-left: 10%;
+      }
+      .son-of-kid2-2 {
+        background-color: cadetblue;
+        width: 30%;
+        height: 100%;
+        margin-right: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parinte">
+      <div class="kid1">
+        <div class="son-of-kid1"></div>
+      </div>
+      <div class="kid2">
+        <div class="son-of-kid2-1"></div>
+        <div class="son-of-kid2-2"></div>
+      </div>
+    </div>
+  </body>
+</html>

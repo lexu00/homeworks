@@ -1,0 +1,57 @@
+.height-top-bar {
+  height: 5vh;
+}
+.bg-blue {
+  background-color: rgb(60, 60, 126);
+}
+.img-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.search-img {
+  height: 1.5vh;
+}
+.search-bar {
+  border: 1px;
+  border-radius: 15px;
+}
+.profile-pic {
+  height: 4.5vh;
+}
+.notification-pic {
+  height: 3vh;
+}
+/* .padding-right-nul{
+    padding-le;
+} */
+.height-separator {
+  height: 2vh;
+}
+.height-test {
+  height: 2000px;
+}
+.profile-pic2 {
+  height: 7vh;
+}
+.job-desc {
+  
+  height: fit-content;
+  margin: 0%;
+}
+.text-name {
+  height: 40px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0%;
+}
+.profile-box {
+  height: 50vh;
+  width: 20vw;
+  left: 20vw;
+}
+.separator-img {
+  width: 20vw;
+  height: 3vh;
+}
+

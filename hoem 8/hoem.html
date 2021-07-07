@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .top {
+        display: flex;
+        height: 5vh;
+        width: 100vw;
+        background-color: rgb(42, 42, 116);
+
+        justify-content: flex-end;
+
+        align-items: center;
+      }
+
+      .button {
+        display: inline-block;
+
+        animation: hover 1s ease-in;
+        padding: auto;
+        padding-right: 1vh;
+        padding-left: 1vh;
+        height: 100%;
+        line-height: 5vh;
+
+        color: cyan;
+      }
+      .button:hover {
+        background-color: rgb(76, 119, 32);
+      }
+
+      @media (max-width: 693px) {
+        .top {
+          height: 100vh;
+          width: 16vw;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          min-width: 80px;
+        }
+        .button {
+          width: 100%;
+          padding-right: 0px;
+          padding-left: 0px;
+          text-align: center;
+          height: 5vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="button">home</div>
+      <div class="button">about</div>
+      <div class="button">products</div>
+      <div class="button">contact</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes black {
+        0% {
+          background-color: white;
+        }
+        50% {
+          background-color: black;
+        }
+        100% {
+          background-color: black;
+        }
+      }
+      #div-1 {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+      #div-1:active {
+        animation: black 2s ease-in 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div-1">stinge becu</div>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .top-div {
+        position: fixed;
+        height: 5vh;
+        width: 100vw;
+        background-color: blue;
+        z-index: 2;
+        text-align: center;
+        color: darkgrey;
+        line-height: 5vh;
+      }
+      .bottom-div {
+        position: fixed;
+        height: 5vh;
+        width: 100vw;
+        background-color: chocolate;
+        bottom: 0px;
+        z-index: 2;
+        text-align: center;
+        color: rgb(138, 42, 42);
+        line-height: 5vh;
+      }
+      .middle-div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        /* width: 100vw; */
+        position: relative;
+        background-color: brown;
+        top: 5vh;
+        height: 90vh;
+      }
+      @media (max-width: 425px) {
+        .middle-div {
+          flex-direction: column;
+          height: auto;
+        }
+      }
+      .middle-div-last {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        position: relative;
+        background-color: brown;
+        top: 5vh;
+        height: 90vh;
+        padding-bottom: 5vh;
+      }
+      @media (max-width: 425px) {
+        .middle-div-last {
+          flex-direction: column;
+          height: auto;
+        }
+      }
+      .img-right {
+        align-self: center;
+        height: 20vh;
+        width: 21vw;
+        border-left: 3px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-color: rgb(30, 156, 30);
+        border-style: solid;
+        padding-left: 2vw;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+      }
+      @media (max-width: 425px) {
+        .img-right {
+          width: 50vh;
+          height: 50vh;
+          padding-bottom: 2vh;
+          padding-top: 5vh;
+          border-top: 5px;
+          border-bottom: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-style: double;
+          border-color: rgb(0, 255, 55);
+          padding-left: 0px;
+        }
+      }
+      .text-left {
+        padding-top: 10vh;
+        display: flex;
+        width: 70vw;
+        /* height: 30vh; */
+        padding-right: 2vw;
+        padding-left: 2vw;
+        font-size: 20px;
+        /* border-right: 10px;
+        border-color: rgb(102, 77, 39);
+        border-style: solid; */
+        flex-direction: column;
+
+        /* flex-wrap: wrap; */
+        align-content: flex-start;
+      }
+      @media (max-width: 425px) {
+        .text-left {
+          align-self: center;
+          padding-top: 3vh;
+        }
+      }
+      h3 {
+        align-self: center;
+        padding-bottom: 2vh;
+      }
+      .middle-div2 {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+
+        /* width: 100vw; */
+        position: relative;
+        background-color: rgb(104, 60, 60);
+        top: 5vh;
+        height: 90vh;
+        bottom: 5vh;
+      }
+      @media (max-width: 425px) {
+        .middle-div2 {
+          flex-direction: column;
+          height: auto;
+        }
+      }
+      .img-left {
+        align-self: center;
+        height: 20vh;
+        width: 21vw;
+        border-left: 0px;
+        border-top: 0px;
+        border-right: 3px;
+        border-bottom: 0px;
+        border-color: rgb(30, 156, 30);
+        border-style: solid;
+        padding-right: 2vw;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+      }
+      @media (max-width: 425px) {
+        .img-left {
+          width: 50vh;
+          height: 50vh;
+          padding-bottom: 2vh;
+          padding-top: 5vh;
+          border-top: 5px;
+          border-bottom: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-style: double;
+          border-color: blue;
+          padding-right: 0px;
+        }
+      }
+      .img3 {
+        align-self: center;
+        height: 20vh;
+        width: 21vw;
+        border-left: 3px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-color: rgb(30, 156, 30);
+        border-style: solid;
+        padding-left: 2vw;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+      }
+      @media (max-width: 425px) {
+        .img3 {
+          width: 50vh;
+          height: 50vh;
+          padding-bottom: 2vh;
+          padding-top: 5vh;
+          border-top: 5px;
+          border-bottom: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-style: double;
+          border-color: rgb(0, 255, 55);
+          padding-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-div">nut</div>
+    <div class="bottom-div">nut nut</div>
+    <div class="middle-div">
+      <div class="text-left">
+        <h3>paragrafu unu</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+        hendrerit lorem. Quisque aliquet maximus nisi, nec lobortis ipsum
+        aliquet non. Nullam commodo volutpat magna, porttitor gravida diam
+        sollicitudin ut. Ut blandit sapien leo. Nulla in elit aliquam, faucibus
+        leo bibendum, sollicitudin leo. Duis faucibus enim lectus, non dapibus
+        sem laoreet ac. Sed nec sem sed elit eleifend scelerisque molestie vel
+        velit. Sed rutrum, metus sit amet pharetra elementum, orci ligula
+        interdum neque, a scelerisque orci dui in libero. Integer nec dolor at
+        dui pulvinar pellentesque a ac est. Nunc dapibus sapien orci, in
+        pulvinar lorem rutrum sed. Nulla facilisi. Duis lobortis cursus nibh nec
+        efficitur. Vivamus nisi quam, mollis non convallis et, vestibulum vitae
+        tortor.
+      </div>
+      <img class="img-right" src="./imgs/3 (1).jpg" alt="nema" />
+    </div>
+    <div class="middle-div2">
+      <div class="text-left">
+        <h3>paragrafu doi</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+        hendrerit lorem. Quisque aliquet maximus nisi, nec lobortis ipsum
+        aliquet non. Nullam commodo volutpat magna, porttitor gravida diam
+        sollicitudin ut. Ut blandit sapien leo. Nulla in elit aliquam, faucibus
+        leo bibendum, sollicitudin leo. Duis faucibus enim lectus, non dapibus
+        sem laoreet ac. Sed nec sem sed elit eleifend scelerisque molestie vel
+        velit. Sed rutrum, metus sit amet pharetra elementum, orci ligula
+        interdum neque, a scelerisque orci dui in libero. Integer nec dolor at
+        dui pulvinar pellentesque a ac est. Nunc dapibus sapien orci, in
+        pulvinar lorem rutrum sed. Nulla facilisi. Duis lobortis cursus nibh nec
+        efficitur. Vivamus nisi quam, mollis non convallis et, vestibulum vitae
+        tortor.
+      </div>
+      <img class="img-left" src="./imgs/3 (2).jpg" alt="nema" />
+    </div>
+    <div class="middle-div-last">
+      <div class="text-left">
+        <h3>paragrafu trei</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+        hendrerit lorem. Quisque aliquet maximus nisi, nec lobortis ipsum
+        aliquet non. Nullam commodo volutpat magna, porttitor gravida diam
+        sollicitudin ut. Ut blandit sapien leo. Nulla in elit aliquam, faucibus
+        leo bibendum, sollicitudin leo. Duis faucibus enim lectus, non dapibus
+        sem laoreet ac. Sed nec sem sed elit eleifend scelerisque molestie vel
+        velit. Sed rutrum, metus sit amet pharetra elementum, orci ligula
+        interdum neque, a scelerisque orci dui in libero. Integer nec dolor at
+        dui pulvinar pellentesque a ac est. Nunc dapibus sapien orci, in
+        pulvinar lorem rutrum sed. Nulla facilisi. Duis lobortis cursus nibh nec
+        efficitur. Vivamus nisi quam, mollis non convallis et, vestibulum vitae
+        tortor.
+      </div>
+      <img class="img3" src="./imgs/3 (3).jpg" alt="nema" />
+    </div>
+  </body>
+</html>

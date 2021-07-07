@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .parinte {
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-content: center;
+        width: 100vw;
+        height: 100vh;
+
+        flex-direction: column;
+        transform: rotate(330deg);
+        left: -20vh;
+        top: 30vh;
+      }
+      .kid {
+        position: relative;
+        display: inline-block;
+        background-color: rgba(23, 120, 145, 0.664);
+        width: 130vw;
+        height: 20vh;
+      }
+      h1 {
+        position: absolute;
+        margin-top: 1%;
+        margin-left: 50%;
+
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parinte">
+      <div class="kid"><h1 style="color: lightgreen;">flex</h1></div>
+      <div class="kid"><h1 style="color: mediumaquamarine;">on</h1></div>
+      <div class="kid"><h1 style="color: orchid;">cancer</h1></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+/*Tema putin mai complicata de data asta.
+Prin numele arhivei sa va treceti numele vostru
+CSS-ul puteti sa-l faceti in ce tip vreti voi (extern intern)
+Vreau ca divul din stanga si cel de sus sa fie postion:fixed;
+Nu vreau margini albe nici unde.
+For sizing references:
+divul de sus la mine are height: 5%; width (tre sa ocupe tot view-portul);
+divul de la stanga are width:15%; height (tre sa o ocupe tot view-portul);
+divul din mijloc (cel principal) are height:2000px (ca sa pot sa il scrolez 
+ca in video) width din nou ca sa ocupe exact spatiul orizontal fara sa imi apara bara de scroll orizontala
+The rest is up to you! */
+
+body {
+  background-color: brown;
+  margin: 0 auto;
+}
+
+.divl {
+  position: fixed;
+  display: inline-block;
+
+  width: 15%;
+  height: 100%;
+  background-color: blueviolet;
+  margin: 0;
+
+  top: 0;
+  left: 0;
+  font-size: 30px;
+}
+
+.divt {
+  position: fixed;
+  display: inline-block;
+  height: 5%;
+  width: 100%;
+  background-color: cadetblue;
+  margin: 0;
+
+  top: 0;
+  left: 15%;
+  z-index: 1;
+  font-size: 30px;
+}
+.divc {
+  position: absolute;
+  display: inline-block;
+  width: 85%;
+  height: 3000px;
+  background-color: rgb(109, 90, 196);
+  top: 5%;
+  left: 15%;
+  font-size: 30px;
+}
+
+h3 {
+  color: cyan;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+}
+.minini {
+  position: sticky;
+  display: block;
+  top: 5%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 40px;
+  background-color: darkcyan;
+  text-align: center;
+}
+
+.alamic {
+  position: relative;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
